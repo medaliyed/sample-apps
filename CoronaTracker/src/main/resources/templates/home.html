@@ -21,8 +21,15 @@
 	<div class="jumbotron">
 		<h1 class="display-4" th:text="${totalReportedCases}"></h1>
 		<p class="lead">Total cases</p>
-		<h1 class="display-4" th:text="${newCases}"></h1>
-		<p class="lead">Total cases reported as of today</p>
+		<hr class="my-4">
+
+
+		<p>
+			<span> Total cases reported as of today </span> 
+				
+			<span th:text="${newCases}"> </span>
+
+		</p>
 	</div>
 
 	<div>
