@@ -1,0 +1,10 @@
+SELECT playerName
+FROM `casino`.`players`
+where idPlayer IN
+(SELECT idPlayer 
+FROM `casino`.`favorites`
+where idGame IN 
+(SELECT idType
+FROM `casino`.`types`
+where typeName = "slot"));
+
